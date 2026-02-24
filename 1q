@@ -20,13 +20,12 @@ CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS   
 docker exec -it 8c13fe8bc176 /bin/bash
 ```
 
-Далее внутри контейнера можно подключиться при помощи psql
+Далее внутри контейнера можно подключиться при помощи psql-клиента
 ```
 psql -U postgres -d postgres
 ``
 
 И проверить созданные таблицы
-
 ```
 postgres=# \dt
            List of relations
