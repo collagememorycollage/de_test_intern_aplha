@@ -16,11 +16,13 @@ CONTAINER ID   IMAGE         COMMAND                  CREATED          STATUS   
 ```
 
 Чтобы подключиться к контейнеру
+
 ```
 docker exec -it 8c13fe8bc176 /bin/bash
 ```
 
 Далее внутри контейнера можно подключиться при помощи psql
+
 ```
 psql -U postgres -d postgres
 ``
