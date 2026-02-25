@@ -1,0 +1,9 @@
+services:
+  jupyter:
+    image: jupyter/scipy-notebook 
+    ports:
+      - "8888:8888"
+    volumes:
+      # Mounts the local 'notebooks' directory to the container's work directory
+      - ./notebooks:/home/jovyan/work 
+
